@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Join BDWU — Botswana Diamond Workers Union. Take action for better working conditions." />
+    <title>Join BDWU — Botswana Diamond Workers Union</title>
+    <link rel="manifest" href="site.webmanifest" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="BDWU logo" class="me-2" />
+            <span>BDWU</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Representation</a></li>
+              <li class="nav-item"><a class="nav-link" href="campaigns.html">Campaigns</a></li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item ms-lg-3"><a class="btn btn-primary btn-sm" href="join.html">Join</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold" style="color: #DC143C;">Join BDWU Today</h1>
+            <p class="lead mt-3" style="color: #333; line-height: 1.8;">Take the first step towards better working conditions and stronger representation. Complete this form to start your membership journey with BDWU.</p>
+          </div>
+
+          <div class="card shadow-sm border-0" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+            <div class="card-body p-5">
+              <form name="join" method="POST" data-netlify="true" class="needs-validation" novalidate>
+                <input type="hidden" name="form-name" value="join" />
+
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label fw-bold">Full Name *</label>
+                    <input type="text" id="name" name="name" required class="form-control form-control-lg" placeholder="Enter your full name" />
+                    <div class="invalid-feedback">Please enter your full name (minimum 2 characters).</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email" class="form-label fw-bold">Email Address *</label>
+                    <input type="email" id="email" name="email" required class="form-control form-control-lg" placeholder="your@email.com" />
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="employer" class="form-label fw-bold">Employer / Workplace</label>
+                    <input type="text" id="employer" name="employer" class="form-control form-control-lg" placeholder="Where do you currently work?" />
+                    <div class="form-text">Optional: This helps us provide more targeted support.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="message" class="form-label fw-bold">Message (Optional)</label>
+                    <textarea id="message" name="message" rows="4" class="form-control form-control-lg" placeholder="Tell us about yourself, your workplace concerns, or why you want to join BDWU..."></textarea>
+                    <div class="form-text">Share any specific issues or questions you have.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="consent" required />
+                      <label class="form-check-label" for="consent">
+                        I consent to BDWU holding this information for membership and organizing purposes. I understand my details will not be shared without my consent.
+                      </label>
+                      <div class="invalid-feedback">You must agree to the privacy terms to proceed.</div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-danger btn-lg px-5 py-3">
+                      <span class="fw-bold">Join BDWU Now</span>
+                    </button>
+                    <div class="mt-3">
+                      <span class="text-muted">or</span>
+                      <a href="mailto:info@bdwu.org?subject=Join BDWU" class="ms-2 text-decoration-none">
+                        <i class="fas fa-envelope me-1"></i>Contact us directly
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <p class="text-muted small">
+              <i class="fas fa-shield-alt me-1"></i>
+              Your information is secure and confidential. We prioritize your privacy and data protection.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
